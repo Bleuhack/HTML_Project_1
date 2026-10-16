@@ -4,339 +4,357 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Jennifer Mukonde Safi – Software Engineer</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- Police Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feuille de style -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <header>
-      <p>
+    <header class="site-header">
+      <h1 class="site-title">Jennifer <strong>Mukonde Safi</strong></h1>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="tagline">
         Software Engineer | CompTIA Security+ Certified | AI Developer Bootcamp
         Participant
       </p>
-      <nav>
-        <a href="#home">Home</a> | <a href="#about">About</a> |
-        <a href="#work">Work</a> | <a href="#resume">Resume</a> |
-        <a href="#contact">Contact</a>
-      </nav>
     </header>
-
-    <hr />
 
     <main>
       <!-- HOME -->
-      <section id="home">
-        <h2>Welcome</h2>
+      <section id="home" class="hero">
+        <h2 class="section-title">Welcome</h2>
         <img
+          class="profile-photo"
           src="maphoto.png"
           alt="Portrait of Jennifer Mukonde Safi"
           width="200"
         />
-        <p>
+        <p class="hero-text">
           Hi, I'm Jennifer, a software engineer based in Kinshasa, DRC. I build
           useful software with a focus on cybersecurity and artificial
           intelligence.
         </p>
-        <p><a href="#work">See my work</a></p>
+        <p><a class="btn" href="#work">See my work</a></p>
       </section>
 
-      <hr />
-
-      <!-- ABOUT -->
-      <section id="about">
-        <h2>About me</h2>
-        <p>
-          I am a software engineer with a degree in Computer Science Engineering
-          and training in
-          <strong>cybersecurity and artificial intelligence</strong>. I combine
-          solid technical foundations with a practical, curious approach to
-          building useful software. I enjoy learning new technologies, working
-          in a team and turning ideas into working applications.
-        </p>
-
-        <h3>Soft skills</h3>
-        <ul>
-          <li>Works well in a team</li>
-          <li>Good communication skills</li>
-          <li>Strong problem-solving skills</li>
-        </ul>
-
-        <h3>Interests</h3>
-        <ul>
-          <li>Art and culture</li>
-          <li>Reading</li>
-          <li>Tech conferences</li>
-          <li>Hackathons</li>
-        </ul>
-
-        <figure>
-          <video controls width="400">
-            <source src="video.mp4" type="video/mp4" />
-            Your browser does not support video.
-          </video>
-          <figcaption>A short video to introduce myself</figcaption>
-        </figure>
-      </section>
-
-      <hr />
-
-      <!-- WORK -->
-      <section id="work">
-        <h2>My work</h2>
-
-        <article>
-          <h3>Anza: Content licensing engine (Team Node One)</h3>
-          <p>
-            <strong>1st Place, 2026</strong> – Hack4Freedom x Dada Devs Bootcamp
-            and Hackathon, two-week immersion in Bitcoin, Lightning and Nostr.
-          </p>
-          <ul>
-            <li>
-              Built a platform where creators publish licensing offers (asset,
-              rights, price) and brands pay instantly over the Bitcoin Lightning
-              Network.
-            </li>
-            <li>
-              Issued a verifiable license on payment, unlocked the original file
-              and recorded the agreement with the Nostr protocol.
-            </li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>La Citizen: AI government copilot</h3>
-          <p>
-            <strong>2nd Place</strong> – Build with Gemma Hackathon (Google
-            Developer Group, GoMyCode), three-hour build.
-          </p>
-          <ul>
-            <li>
-              Developed a conversational assistant powered by Google's Gemma
-              that answers citizens' questions using retrieval-augmented
-              generation (RAG) over official government sources.
-            </li>
-            <li>
-              Helped users understand policies, identify required documents and
-              check eligibility for services, to counter misinformation caused
-              by scattered public information.
-            </li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>
-            Nielekeze: Climate and agriculture platform (Team TerraMavuno)
-          </h3>
-          <p>
-            <strong>5th Place</strong> – AI Mashinani 2.0 Hackathon (Claude
-            Community), one-day build.
-          </p>
-          <ul>
-            <li>
-              Designed a two-sided platform: an interactive county-level map of
-              rainfall, drought and crop conditions over five years with a
-              budget simulator for decision-makers, and an SMS channel for
-              farmers without smartphones or internet.
-            </li>
-            <li>
-              Connected farmers' field reports to the platform's data, creating
-              a two-way link between farmers and policy makers.
-            </li>
-          </ul>
-        </article>
-      </section>
-
-      <hr />
-
-      <!-- RESUME -->
-      <section id="resume">
-        <h2>Resume</h2>
-
-        <h3>Awards</h3>
-        <table border="1">
-          <thead>
-            <tr>
-              <th>Place</th>
-              <th>Project</th>
-              <th>Event</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1st Place</td>
-              <td>Anza</td>
-              <td>Hack4Freedom x Dada Devs Bootcamp and Hackathon</td>
-            </tr>
-            <tr>
-              <td>2nd Place</td>
-              <td>La Citizen</td>
-              <td>Build with Gemma Hackathon, Google Developer Group (GDG)</td>
-            </tr>
-            <tr>
-              <td>5th Place</td>
-              <td>Nielekeze</td>
-              <td>AI Mashinani 2.0 Hackathon, Claude Community</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>Education</h3>
-        <table border="1">
-          <thead>
-            <tr>
-              <th>Year</th>
-              <th>Diploma</th>
-              <th>School</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>2024</td>
-              <td>
-                Computer Science Engineer, Department of Software Engineering
-              </td>
-              <td>Mapon University, Democratic Republic of the Congo</td>
-            </tr>
-            <tr>
-              <td>2019</td>
-              <td>State Diploma in Biology and Chemistry</td>
-              <td>Motema Mpiko High School, Kinshasa</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>Professional experience</h3>
-        <table border="1">
-          <thead>
-            <tr>
-              <th>Period</th>
-              <th>Role</th>
-              <th>Company</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Jul–Aug 2025</td>
-              <td>IT Intern</td>
-              <td>Fleuve Congo Hotel</td>
-            </tr>
-            <tr>
-              <td>May–Jul 2024</td>
-              <td>IT Intern, Management Information Systems (MIS)</td>
-              <td>Tenke Fungurume Mining (TFM)</td>
-            </tr>
-          </tbody>
-        </table>
-        <p>
-          At TFM, I rotated through five areas of a large industrial IT
-          department: Business Applications, System Administration, Networks,
-          Network Facilities and Mining Technology. I gained hands-on exposure
-          to enterprise systems and network infrastructure in a mining
-          environment.
-        </p>
-
-        <h3>Technical skills</h3>
-        <table border="1">
-          <tr>
-            <th>Area</th>
-            <th>Skills</th>
-          </tr>
-          <tr>
-            <td>Software development</td>
-            <td>Web development</td>
-          </tr>
-          <tr>
-            <td>Artificial intelligence</td>
-            <td>LLM applications, retrieval-augmented generation (RAG)</td>
-          </tr>
-          <tr>
-            <td>Security</td>
-            <td>
-              Network security, risk management, access control, cryptography
-            </td>
-          </tr>
-          <tr>
-            <td>Networks and systems</td>
-            <td>Computer networks, system administration fundamentals</td>
-          </tr>
-          <tr>
-            <td>Protocols</td>
-            <td>Bitcoin, Lightning Network, Nostr</td>
-          </tr>
-          <tr>
-            <td>Office tools</td>
-            <td>Microsoft Word, Excel, PowerPoint</td>
-          </tr>
-        </table>
-
-        <h3>Certifications and training</h3>
-        <ol>
-          <li>
-            CompTIA Security+: network security, threat and vulnerability
-            management, access control, cryptography, risk management
-          </li>
-          <li>
-            AI Developer Bootcamp, GoMyCode: artificial intelligence and machine
-            learning (in progress)
-          </li>
-          <li>
-            AI Everything x GITEX, 20–21 May 2026: workshops on AI,
-            cybersecurity and large language models (LLMs)
-          </li>
-        </ol>
-      </section>
-
-      <hr />
-
-      <!-- CONTACT -->
-      <section id="contact">
-        <h2>Contact me</h2>
-        <ul>
-          <li>Location: Kinshasa, DRC</li>
-          <li>
-            Email:
-            <a href="mailto:mukondesafi@gmail.com">mukondesafi@gmail.com</a>
-          </li>
-          <li>LinkedIn: Jennifer MUKONDE</li>
-        </ul>
-
-        <form action="#" method="post">
-          <p>
-            <label for="name">Name:</label><br />
-            <input type="text" id="name" name="name" required />
+      <div class="container">
+        <!-- ABOUT -->
+        <section id="about" class="section">
+          <h2 class="section-title">About me</h2>
+          <p class="about-text">
+            I am a software engineer with a degree in Computer Science
+            Engineering and training in
+            <strong>cybersecurity and artificial intelligence</strong>. I
+            combine solid technical foundations with a practical, curious
+            approach to building useful software. I enjoy learning new
+            technologies, working in a team and turning ideas into working
+            applications.
           </p>
 
-          <p>
-            <label for="email">Email:</label><br />
-            <input type="email" id="email" name="email" required />
+          <figure class="video-box">
+            <video controls width="400">
+              <source src="video.mp4" type="video/mp4" />
+              Your browser does not support video.
+            </video>
+            <figcaption>A short video to introduce myself</figcaption>
+          </figure>
+        </section>
+
+        <!-- WORK -->
+        <section id="work" class="section">
+          <h2 class="section-title">My work</h2>
+
+          <div class="project-list">
+            <article class="project">
+              <h3 class="project-title">
+                Anza: Content licensing engine (Team Node One)
+              </h3>
+              <p class="award">
+                <strong>1st Place, 2026</strong> – Hack4Freedom x Dada Devs
+                Bootcamp and Hackathon, two-week immersion in Bitcoin, Lightning
+                and Nostr.
+              </p>
+              <ul>
+                <li>
+                  Built a platform where creators publish licensing offers
+                  (asset, rights, price) and brands pay instantly over the
+                  Bitcoin Lightning Network.
+                </li>
+                <li>
+                  Issued a verifiable license on payment, unlocked the original
+                  file and recorded the agreement with the Nostr protocol.
+                </li>
+              </ul>
+            </article>
+
+            <article class="project">
+              <h3 class="project-title">La Citizen: AI government copilot</h3>
+              <p class="award">
+                <strong>2nd Place</strong> – Build with Gemma Hackathon (Google
+                Developer Group, GoMyCode), three-hour build.
+              </p>
+              <ul>
+                <li>
+                  Developed a conversational assistant powered by Google's Gemma
+                  that answers citizens' questions using retrieval-augmented
+                  generation (RAG) over official government sources.
+                </li>
+                <li>
+                  Helped users understand policies, identify required documents
+                  and check eligibility for services, to counter misinformation
+                  caused by scattered public information.
+                </li>
+              </ul>
+            </article>
+
+            <article class="project">
+              <h3 class="project-title">
+                Nielekeze: Climate and agriculture platform (Team TerraMavuno)
+              </h3>
+              <p class="award">
+                <strong>5th Place</strong> – AI Mashinani 2.0 Hackathon (Claude
+                Community), one-day build.
+              </p>
+              <ul>
+                <li>
+                  Designed a two-sided platform: an interactive county-level map
+                  of rainfall, drought and crop conditions over five years with
+                  a budget simulator for decision-makers, and an SMS channel for
+                  farmers without smartphones or internet.
+                </li>
+                <li>
+                  Connected farmers' field reports to the platform's data,
+                  creating a two-way link between farmers and policy makers.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <!-- RESUME -->
+        <section id="resume" class="section">
+          <h2 class="section-title">Resume</h2>
+
+          <h3 class="subtitle">Awards</h3>
+          <div class="table-wrapper">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Place</th>
+                  <th>Project</th>
+                  <th>Event</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1st Place</td>
+                  <td>Anza</td>
+                  <td>Hack4Freedom x Dada Devs Bootcamp and Hackathon</td>
+                </tr>
+                <tr>
+                  <td>2nd Place</td>
+                  <td>La Citizen</td>
+                  <td>
+                    Build with Gemma Hackathon, Google Developer Group (GDG)
+                  </td>
+                </tr>
+                <tr>
+                  <td>5th Place</td>
+                  <td>Nielekeze</td>
+                  <td>AI Mashinani 2.0 Hackathon, Claude Community</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 class="subtitle">Education</h3>
+          <div class="table-wrapper">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Year</th>
+                  <th>Diploma</th>
+                  <th>School</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2024</td>
+                  <td>
+                    Computer Science Engineer, Department of Software
+                    Engineering
+                  </td>
+                  <td>Mapon University, Democratic Republic of the Congo</td>
+                </tr>
+                <tr>
+                  <td>2019</td>
+                  <td>State Diploma in Biology and Chemistry</td>
+                  <td>Motema Mpiko High School, Kinshasa</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 class="subtitle">Professional experience</h3>
+          <div class="table-wrapper">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Period</th>
+                  <th>Role</th>
+                  <th>Company</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Jul–Aug 2025</td>
+                  <td>IT Intern</td>
+                  <td>Fleuve Congo Hotel</td>
+                </tr>
+                <tr>
+                  <td>May–Jul 2024</td>
+                  <td>IT Intern, Management Information Systems (MIS)</td>
+                  <td>Tenke Fungurume Mining (TFM)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="resume-note">
+            At TFM, I rotated through five areas of a large industrial IT
+            department: Business Applications, System Administration, Networks,
+            Network Facilities and Mining Technology. I gained hands-on exposure
+            to enterprise systems and network infrastructure in a mining
+            environment.
           </p>
 
-          <p>
-            <label for="subject">Subject:</label><br />
-            <select id="subject" name="subject">
-              <option value="project">Project</option>
-              <option value="job">Job offer</option>
-              <option value="other">Other</option>
-            </select>
-          </p>
+          <h3 class="subtitle">Technical skills</h3>
+          <div class="table-wrapper">
+            <table class="table">
+              <tr>
+                <th>Area</th>
+                <th>Skills</th>
+              </tr>
+              <tr>
+                <td>Software development</td>
+                <td>Web development</td>
+              </tr>
+              <tr>
+                <td>Artificial intelligence</td>
+                <td>LLM applications, retrieval-augmented generation (RAG)</td>
+              </tr>
+              <tr>
+                <td>Security</td>
+                <td>
+                  Network security, risk management, access control,
+                  cryptography
+                </td>
+              </tr>
+              <tr>
+                <td>Networks and systems</td>
+                <td>Computer networks, system administration fundamentals</td>
+              </tr>
+              <tr>
+                <td>Protocols</td>
+                <td>Bitcoin, Lightning Network, Nostr</td>
+              </tr>
+              <tr>
+                <td>Office tools</td>
+                <td>Microsoft Word, Excel, PowerPoint</td>
+              </tr>
+            </table>
+          </div>
 
-          <p>
-            <label for="message">Message:</label><br />
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              cols="40"
-              required
-            ></textarea>
-          </p>
+          <h3 class="subtitle">Certifications and training</h3>
+          <div class="card">
+            <ol class="cert-list">
+              <li>
+                CompTIA Security+: network security, threat and vulnerability
+                management, access control, cryptography, risk management
+              </li>
+              <li>
+                AI Developer Bootcamp, GoMyCode: artificial intelligence and
+                machine learning (in progress)
+              </li>
+              <li>
+                AI Everything x GITEX, 20–21 May 2026: workshops on AI,
+                cybersecurity and large language models (LLMs)
+              </li>
+            </ol>
+          </div>
+        </section>
 
-          <button type="submit">Send message</button>
-        </form>
-      </section>
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+          <h2 class="section-title">Contact me</h2>
+
+          <div class="contact-grid">
+            <div class="contact-info">
+              <ul class="styled-list">
+                <li>Location: Kinshasa, DRC</li>
+                <li>
+                  Email:
+                  <a href="mailto:mukondesafi@gmail.com"
+                    >mukondesafi@gmail.com</a
+                  >
+                </li>
+                <li>LinkedIn: Jennifer MUKONDE</li>
+              </ul>
+            </div>
+
+            <form class="contact-form" action="#" method="post">
+              <p class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+              </p>
+
+              <p class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+              </p>
+
+              <p class="form-group">
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject">
+                  <option value="project">Project</option>
+                  <option value="job">Job offer</option>
+                  <option value="other">Other</option>
+                </select>
+              </p>
+
+              <p class="form-group">
+                <label for="message">Message:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  cols="40"
+                  required
+                ></textarea>
+              </p>
+
+              <button class="btn-primary" type="submit">Send message</button>
+            </form>
+          </div>
+        </section>
+      </div>
     </main>
 
-    <hr />
-
-    <footer>
+    <footer class="site-footer">
       <p>&copy; 2026 Jennifer Mukonde Safi. All rights reserved.</p>
     </footer>
   </body>
